@@ -7,5 +7,5 @@ public class LoginConstants {
     public static final String SIGN_IN_BUTTON_LOCATOR = "ACCESSIBILITY_ID:signInButtonLogin";
     public static final String SIGN_UP_BUTTON_LOCATOR = "ACCESSIBILITY_ID:signUpButtonLogin";
 
-    public static final String VIEW_NOT_DISPLAYED_MESSAGE = "Login page is not displayed.";
+
 }

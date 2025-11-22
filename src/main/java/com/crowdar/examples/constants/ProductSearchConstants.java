@@ -12,6 +12,7 @@ public class ProductSearchConstants {
 
     public static final String SEARCH_INPUT_LOCATOR = "XPATH://android.widget.EditText[@resource-id=\"com.mercadolibre:id/autosuggest_input_search\"]";
 
-    public static final String UBICACION_FILTER = "XPATH://android.view.ViewGroup[@resource-id=\"com.mercadolibre:id/search_filter_intervention_background\"]";
+    public static final String  PRUEBA_XPATH = "XPATH:(//android.view.ViewGroup[@resource-id=\"com.mercadolibre:id/suggestion_container\"])[1]";
+    public static final String UBICACION_FILTER = "XPATH:(//android.widget.ImageView[@resource-id=\"com.mercadolibre:id/search_item_filter_intervention_image\"])[3]";
     //public static final String UBICACION_FILTER_ID = "ACCESSIBILITY_ID:com.mercadolibre:id/search_filter_intervention_background";
 }

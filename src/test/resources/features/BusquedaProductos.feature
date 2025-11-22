@@ -8,8 +8,8 @@ Feature: Búsqueda de productos por rubro y gestión de favoritos
     Then el sistema muestra una lista de productos del rubro seleccionado
 
     Examples:
-      | user                    | contraseña             | rubro           |
-      | TESTUSER450396697       | QZb9VY6okr             | Zapatillas      |
+      | user                    | contraseña             | rubro                  |
+      | TESTUSER450396697       | QZb9VY6okr             | Zapatillas Hombre      |
 
 #@Ignore
 #  Scenario: Guardar producto en favoritos

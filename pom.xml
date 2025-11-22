@@ -40,7 +40,8 @@
                 <crowdar.driverHub>http://127.0.0.1:4723/</crowdar.driverHub>
                 <cucumber.runner>testngSecuencial.xml</cucumber.runner>
                 <crowdar.avd>Pixel_3_API_29</crowdar.avd>
-                <crowdar.appLocation>C:\\\\Documentos\\\\Desarrollo\\\\lippia-mobile-sample-project\\\\sample_apk\\\\lippia.apk</crowdar.appLocation>
+                <!--<crowdar.appLocation>C:\\\\Documentos\\\\Desarrollo\\\\lippia-mobile-sample-project\\\\sample_apk\\\\lippia.apk</crowdar.appLocation> -->
+                <crowdar.appLocation>C:\\\\Users\\\\Nicolas\\\\Academy-2025\\\\TP8-Lippia-Mobile\\\\lippia-mobile-sample-project\\\\sample_apk\\\\mda-2.2.0-25.apk</crowdar.appLocation>
                 <crowdar.deviceName>Pixel3</crowdar.deviceName>
             </properties>
         </profile>
@@ -50,7 +51,8 @@
                 <crowdar.driverHub>http://127.0.0.1:4723/</crowdar.driverHub>
                 <cucumber.runner>testngSecuencial.xml</cucumber.runner>
                 <crowdar.avd>pixel_8</crowdar.avd>
-                <crowdar.appLocation>C:\\\\Users\\\\Nicolas\\\\Academy-2025\\\\TP8-Lippia-Mobile\\\\lippia-mobile-sample-project\\\\sample_apk\\\\lippia.apk</crowdar.appLocation>
+                <crowdar.appLocation>C:\\\\Users\\\\Nicolas\\\\Academy-2025\\\\TP8-Lippia-Mobile\\\\lippia-mobile-sample-project\\\\sample_apk\\\\mda-2.2.0-25.apk</crowdar.appLocation>
+                <!--<crowdar.appLocation>C:\\\\Users\\\\Nicolas\\\\Academy-2025\\\\TP8-Lippia-Mobile\\\\lippia-mobile-sample-project\\\\sample_apk\\\\lippia.apk</crowdar.appLocation>-->
                 <crowdar.deviceName>pixel_8</crowdar.deviceName>
             </properties>
         </profile>
