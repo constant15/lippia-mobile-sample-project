@@ -56,4 +56,13 @@ public class MyDemoAppService {
         boolean present = MobileActionManager.isPresent(MyDemoAppConstants.REMOVE_PRODUCT_CART_ID);
         Assert.assertTrue("El producto no esta presente en el carrito.", present);
     }
+
+    public static void clickRemoveItem(){
+        MobileActionManager.click(MyDemoAppConstants.REMOVE_PRODUCT_CART_ID);
+    }
+
+    public static void verifyDeleteProduct(){
+        boolean carritoVacio = MobileActionManager.isPresent(MyDemoAppConstants.SHOPPING_BUTTON_XPATH);
+        Assert.assertTrue("El carrito no se encuenta vacio.", carritoVacio);
+    }
 }

@@ -58,6 +58,17 @@ public class MyDemoAppSteps extends PageSteps {
     public void verificacionCarritoCargado() {
         MyDemoAppService.verifyCartProduct();
     }
+
+    //Steps feature Eliminar productos del carrito
+    @And("Hago click en el botón 'Remove Item' del producto agregado")
+    public void clickBotonRemoveItem() {
+        MyDemoAppService.clickRemoveItem();
+    }
+
+    @Then("Se verifica que se ha eliminado un producto en el carrito")
+    public void verificacionCarritoVacio() {
+        MyDemoAppService.verifyDeleteProduct();
+    }
 }
 
 
