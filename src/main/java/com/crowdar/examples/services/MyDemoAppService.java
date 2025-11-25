@@ -65,4 +65,48 @@ public class MyDemoAppService {
         boolean carritoVacio = MobileActionManager.isPresent(MyDemoAppConstants.SHOPPING_BUTTON_XPATH);
         Assert.assertTrue("El carrito no se encuenta vacio.", carritoVacio);
     }
+
+    //Metodos utilizados en el feature CompraApp
+
+    public static void clickButtonCheckout(){
+        MobileActionManager.click(MyDemoAppConstants.PROCEED_CHECKOUT_BUTTON_ID);
+    }
+
+    public static void dataInput(){
+        MobileActionManager.setInput(MyDemoAppConstants.NAME_BOX_XPATH, "Nicolas Olivos");
+        MobileActionManager.setInput(MyDemoAppConstants.ADDRESS_BOX_XPATH, "Thedy 2050");
+        MobileActionManager.setInput(MyDemoAppConstants.CITY_BOX_XPATH, "Rosario");
+        MobileActionManager.setInput(MyDemoAppConstants.ZIPCODE_BOX_XPATH, "2000");
+        MobileActionManager.setInput(MyDemoAppConstants.COUNTRY_BOX_XPATH, "Argentina");
+    }
+
+    public static void clickPayment(){
+        MobileActionManager.click(MyDemoAppConstants.PAYMENT_BUTTON_ID);
+    }
+
+    public static void dataPaymentInput(){
+        MobileActionManager.setInput(MyDemoAppConstants.NAME_BANK_BOX_XPATH, "Nicolas Olivos");
+        MobileActionManager.setInput(MyDemoAppConstants.CARD_NUMBER_BOX_XPATH, "8484848484848484");
+        MobileActionManager.setInput(MyDemoAppConstants.EXPIRATION_BOX_XPATH, "0829");
+        MobileActionManager.setInput(MyDemoAppConstants.SECURITY_CODE_BOX_XPATH, "123");
+    }
+
+    public static void clickReviewOrder(){
+        MobileActionManager.click(MyDemoAppConstants.ORDER_REVIEW_BUTTON_XPATH);
+    }
+
+    public static void clickPlaceOrder(){
+        MobileActionManager.click(MyDemoAppConstants.PLACE_ORDER_BUTTON_ID);
+    }
+
+    public static void verifyBuyComplete(){
+        boolean presentMessage = MobileActionManager.isPresent(MyDemoAppConstants.MESSAGE_BUY_XPATH);
+        Assert.assertTrue("La compra no se completó.", presentMessage);
+    }
+
+    public static void verifyBuyError(){
+        boolean errorMessage = MobileActionManager.isPresent(MyDemoAppConstants.ERROR_MESSAGE_XPATH);
+        Assert.assertTrue("La compra se realizó.", errorMessage);
+    }
+
 }

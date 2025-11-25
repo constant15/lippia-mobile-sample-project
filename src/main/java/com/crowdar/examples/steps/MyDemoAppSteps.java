@@ -69,6 +69,47 @@ public class MyDemoAppSteps extends PageSteps {
     public void verificacionCarritoVacio() {
         MyDemoAppService.verifyDeleteProduct();
     }
+
+    //Steps feature Compra en la app
+    @And("hago click en el botón 'Proceed To Checkout'")
+    public void clickCheckout() {
+        MyDemoAppService.clickButtonCheckout();
+
+    }
+    @And("Ingreso los datos personales: 'Full Name', 'Address Line 1', 'City', 'Zip Code', 'Country'")
+    public void ingresoDatosPersonales() {
+        MyDemoAppService.dataInput();
+    }
+
+    @And("hago click en el botón 'To Payment'")
+    public void clickPagar() {
+        MyDemoAppService.clickPayment();
+    }
+
+    @And("Ingreso los datos de la forma de pago: 'Full Name', 'Card Number', 'Expiration Date', 'Security Code'")
+    public void ingresoDatosBancarios() {
+        MyDemoAppService.dataPaymentInput();
+    }
+
+    @And("hago click en el botón 'Review Order'")
+    public void clickOrden() {
+        MyDemoAppService.clickReviewOrder();
+    }
+
+    @And("hago click en el botón 'Place Order'")
+    public void clickPlace() {
+        MyDemoAppService.clickPlaceOrder();
+    }
+
+    @Then("se verifica que se realiza la compra correctamente")
+    public void verificacionCompraCompleta() {
+        MyDemoAppService.verifyBuyComplete();
+    }
+
+    @Then("se verifica que no se completa la compra por falta de datos")
+    public void verificacionCompraIncompleta() {
+        MyDemoAppService.verifyBuyError();
+    }
 }
 
 
