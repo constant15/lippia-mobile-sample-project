@@ -1,4 +1,4 @@
-
+@Ignore
 Feature: Eliminar un producto del carrito
 
   Scenario: Eliminación de un producto del carrito de compras por defecto

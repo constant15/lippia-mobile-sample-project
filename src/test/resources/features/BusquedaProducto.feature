@@ -1,15 +1,19 @@
+@Ignore
+@BusquedaProducto
 
 Feature: Búsqueda de productos
 
+  @Demo
 Scenario Outline: Búsqueda exitosa de los productos de la home page
-Given Estoy en la app mydemo sauce
-When Hago click en el botón desplegable
-And Hago click en la page 'Log in'
-And ingreso el <username> y el <password>
-And hago click en el botón 'Login'
-Then la home page con los productos se muestra correctamente
-  Examples:
-    | username | password |
+  Given Estoy en la app MYDEMOAPP
+  When Hago click en el boton desplegable de la home page
+  And Hago click en la page 'Log In'
+  And ingreso el usuario <username> en la caja de texto 'Username' y la contraseña <password> en la caja de texto 'Password'
+  And hago click en el boton 'Login'
+  Then la home page con los productos se muestra correctamente
 
+  Examples:
+    | username                | password  |
+    |bod@example.com          | 10203040  |
 
 

@@ -1,6 +1,6 @@
 package com.crowdar.examples.constants;
 
-public class ProductSearchConstants {
+public class EliminarProductoConstants {
 
     public static final String LOGIN_BUTTON_SELECT_XPATH = "XPATH:(//android.widget.FrameLayout[@resource-id=\"com.mercadolibre:id/andes_button_progress_determinate_container\"])[2]";
     public static final String EMAIL_INPUT_LOCATOR_XPATH = "XPATH:(//android.widget.EditText[@resource-id=\"com.mercadolibre:id/andes_textfield_edittext\"])";

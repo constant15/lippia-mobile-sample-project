@@ -1,4 +1,4 @@
-
+@Ignore
 
 Feature: Completar la compra con los valores por defecto
 

@@ -52,20 +52,8 @@
                 <cucumber.runner>testngSecuencial.xml</cucumber.runner>
                 <crowdar.avd>pixel_8</crowdar.avd>
                 <crowdar.appLocation>C:\\\\Users\\\\Nicolas\\\\Academy-2025\\\\TP8-Lippia-Mobile\\\\lippia-mobile-sample-project\\\\sample_apk\\\\mda-2.2.0-25.apk</crowdar.appLocation>
-                <!--<crowdar.appLocation>C:\\\\Users\\\\Nicolas\\\\Academy-2025\\\\TP8-Lippia-Mobile\\\\lippia-mobile-sample-project\\\\sample_apk\\\\lippia.apk</crowdar.appLocation>-->
                 <crowdar.deviceName>pixel_8</crowdar.deviceName>
-            </properties>
-        </profile>
-        <profile>
-            <id>LocalNicoEmuML</id>
-            <properties>
-                <crowdar.driverHub>http://127.0.0.1:4723/</crowdar.driverHub>
-                <cucumber.runner>testngSecuencial.xml</cucumber.runner>
-                <crowdar.projectType.driverCapabilities.jsonFile>src/main/resources/capabilities/androidCapabilitiesInstall.json</crowdar.projectType.driverCapabilities.jsonFile>
-                <crowdar.avd>pixel_8</crowdar.avd>
-                <crowdar.appOfd>com.mercadolibre</crowdar.appOfd>
-                <crowdar.appActivity>com.mercadolibre.splash.SplashActivity</crowdar.appActivity>
-                <crowdar.deviceName>pixel_8</crowdar.deviceName>
+
             </properties>
         </profile>
         <profile>

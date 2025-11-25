@@ -1,6 +1,6 @@
 package com.crowdar.examples.constants;
 
-public class SignUpConstants {
+public class CompraAppConstants {
 
     public static final String USERNAME_INPUT_LOCATOR = "ACCESSIBILITY_ID:usernameInputSignUp";
     public static final String EMAIL_INPUT_LOCATOR = "ACCESSIBILITY_ID:emailAddressInputSignUp";

@@ -1,6 +1,6 @@
-
+@Ignore
 Feature: Búsqueda de productos por rubro y gestión de favoritos
-  @Demo
+
   Scenario Outline: Búsqueda exitosa de productos en un rubro específico
     Given que el usuario hace click en el boton 'Iniciar sesion'
     And que el usuario ingresa a su cuenta con su <user> y su <contraseña>
