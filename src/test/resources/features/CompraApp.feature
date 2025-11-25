@@ -1,8 +1,7 @@
-
 @CompraCompleta
 Feature: Completar la compra con los valores por defecto
 
-
+  @Demo
 Scenario Outline: Compra de productos exitosa
   Given Estoy en la app MYDEMOAPP
   When Hago click en el boton desplegable de la home page

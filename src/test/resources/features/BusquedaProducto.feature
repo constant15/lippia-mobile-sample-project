@@ -1,4 +1,3 @@
-@Ignore
 @BusquedaProducto
 
 Feature: Búsqueda de productos

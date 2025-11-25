@@ -1,4 +1,3 @@
-@Ignore
 @EliminarProducto
 
   @Demo
