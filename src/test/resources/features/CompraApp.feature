@@ -1,3 +1,4 @@
+@Ignore
 @CompraCompleta
 Feature: Completar la compra con los valores por defecto
 

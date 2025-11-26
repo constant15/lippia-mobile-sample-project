@@ -73,11 +73,11 @@ public class MyDemoAppService {
     }
 
     public static void dataInput(){
-        MobileActionManager.setInput(MyDemoAppConstants.NAME_BOX_XPATH, "Nicolas Olivos");
-        MobileActionManager.setInput(MyDemoAppConstants.ADDRESS_BOX_XPATH, "Thedy 2050");
-        MobileActionManager.setInput(MyDemoAppConstants.CITY_BOX_XPATH, "Rosario");
-        MobileActionManager.setInput(MyDemoAppConstants.ZIPCODE_BOX_XPATH, "2000");
-        MobileActionManager.setInput(MyDemoAppConstants.COUNTRY_BOX_XPATH, "Argentina");
+        MobileActionManager.setInput(MyDemoAppConstants.NAME_BOX_XPATH, "Rebecca Winter");
+        MobileActionManager.setInput(MyDemoAppConstants.ADDRESS_BOX_XPATH, "Mandorley 112");
+        MobileActionManager.setInput(MyDemoAppConstants.CITY_BOX_XPATH, "Truro");
+        MobileActionManager.setInput(MyDemoAppConstants.ZIPCODE_BOX_XPATH, "89750");
+        MobileActionManager.setInput(MyDemoAppConstants.COUNTRY_BOX_XPATH, "United Kingdom");
     }
 
     public static void clickPayment(){
@@ -85,9 +85,9 @@ public class MyDemoAppService {
     }
 
     public static void dataPaymentInput(){
-        MobileActionManager.setInput(MyDemoAppConstants.NAME_BANK_BOX_XPATH, "Nicolas Olivos");
-        MobileActionManager.setInput(MyDemoAppConstants.CARD_NUMBER_BOX_XPATH, "8484848484848484");
-        MobileActionManager.setInput(MyDemoAppConstants.EXPIRATION_BOX_XPATH, "0829");
+        MobileActionManager.setInput(MyDemoAppConstants.NAME_BANK_BOX_XPATH, "Rebecca Winter");
+        MobileActionManager.setInput(MyDemoAppConstants.CARD_NUMBER_BOX_XPATH, "3258125675687891");
+        MobileActionManager.setInput(MyDemoAppConstants.EXPIRATION_BOX_XPATH, "0325");
         MobileActionManager.setInput(MyDemoAppConstants.SECURITY_CODE_BOX_XPATH, "123");
     }
 
@@ -100,7 +100,7 @@ public class MyDemoAppService {
     }
 
     public static void verifyBuyComplete(){
-        boolean presentMessage = MobileActionManager.isPresent(MyDemoAppConstants.MESSAGE_BUY_XPATH);
+        boolean presentMessage = MobileActionManager.isVisible(MyDemoAppConstants.MESSAGE_BUY_XPATH);
         Assert.assertTrue("La compra no se completó.", presentMessage);
     }
 
